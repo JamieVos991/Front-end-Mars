@@ -9,7 +9,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -272,7 +272,7 @@ html, body {
 .section-d {
     color: #fff;
     overflow: hidden;
-    height: 100vw;
+    height: 52vw;
     width: 100vw;
     top: 0;
     left: 0;
@@ -496,13 +496,13 @@ p{
     height: 100px;
     width: 100px;
     position: relative;
-    margin-left: 10%;
+    margin-left: 25%;
 }
   
 .hero {
     height: 100px;
     width: 100px;
-    margin-left: 10%;
+    margin-left: 25%;
     position: relative;
 }
 
@@ -517,14 +517,14 @@ p{
     height: 100px;
     position: relative;
     width: 100px;
-    margin-left: 10%;
+    margin-left: 25%;
 }
 
 .mail {
     height: 100px;
     position: relative;
     width: 100px;
-    margin-left: 10%;
+    margin-left: 25%;
 }
   
 #fix {
