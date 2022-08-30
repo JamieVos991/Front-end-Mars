@@ -1,0 +1,707 @@
+@font-face { font-family: NeueMachina; src: url('NeueMachina-Regular.otf'); } 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Telugu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Grids */
+
+.col {
+    background: #eee;
+    display: block;
+    float: left;
+}
+
+.col:first-child {
+    margin-left: 0 !important;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+    zoom: 1;
+}
+
+.grid_1_of_4 {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    color: white;
+}
+
+.grid_2_of_4 {
+    width: 25%;
+    height: 100%;
+    background-color: #252526;
+    color: black;
+    font-size: 50px;
+}
+
+.grid_3_of_4 {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    color: white;
+    font-size: 50px;
+}
+
+.grid_4_of_4 {
+    width: 25%;
+    height: 100%;
+    background-color: #252526;
+    color: black;
+    font-size: 50px;
+}
+
+.grid_1_of_5 {
+    width: 50%;
+    height: 100%;
+    background-color: #ecd6e8;
+    color: white;
+}
+
+.grid_2_of_5 {
+    width: 50%;
+    height: 100%;
+    background-color: #a8aaab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_2_of_5 .items {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-auto-rows: 200px; 
+    
+}
+/* Grids einde */
+
+
+.filmpjes .box{
+    position: relative;
+    width: 100%;
+    height: 35vh; 
+    filter: grayscale(1);
+  }
+  
+  .filmpjes .box:hover {
+    filter: grayscale(0);
+  }
+  
+  .filmpjes .box video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #overlay{
+    position: absolute;
+    display: none;
+    
+    width: 100%;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 0, 0, 0.566);
+    z-index: 999;
+    font-family: NeueMachina; src: url('NeueMachina-Regular.otf');
+    font-size: medium;
+    font-size: 130;
+    justify-content: center;
+    
+  }
+  .about{
+    
+    background-color: white;
+    width: 50%;
+    margin: 100px;
+    
+    
+  }
+  .inhoud{
+    color: black;
+  }
+  .textkli{
+    color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .zwarpar{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+
+  }
+  .kruis{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+  
+  .grijze{
+    width: 100%;
+    background-color: #a8aaab;
+    margin-top: 40px;
+    display: flex;
+    font-size: 25px;
+    
+  }
+  .fotosss{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 30px;
+  }
+  .zwart{
+    width: 100%;
+    height: 300px;
+    background-color: #252526;
+  }
+  .about1{
+    display: flex;
+    height: 500px;
+    font-size: 130;
+  
+}
+
+
+/* Header filmpje */
+
+.header {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: -20px;
+}
+
+.fullscreen-video-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 215%;
+    left: 0;
+    background: #0a0a0a;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+/* Header filmpje einde */
+
+
+/* Sections */
+
+.section-a {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    color: white;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section-b {
+    background: red;
+    color: white;
+    height: 80vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section-c {
+    background: green;
+    color: white;
+    height: 35vh;
+    width: 100vw;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.section-d {
+    color: #fff;
+    overflow: hidden;
+    height: 100vw;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+p{
+    text-align: justify;
+}
+
+.section-e {
+    background: #252526;
+    color: #fff;
+    height: 55vh;
+    width: 100vw;
+    cursor: pointer;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    left: 0;
+    z-index: 1;
+}
+
+.section-f {
+    background: #a8aaab;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Sections einde */
+
+
+/* About grid + Social grid */
+
+.box h1 {
+    color: #252526;
+    padding: 70px;
+    font-family: 'NeueMachina', sans-serif;
+    font-size: 65px;
+}
+
+.box .text {
+    color: #252526;
+    font-family: 'NeueMachina', sans-serif;
+ 
+    padding: 70px;
+    margin-top: -100px;
+    word-spacing: 5px;
+    font-size: 22px;
+}
+
+.box .lees-meer {
+    color: #252526;
+    padding: 70px;
+    font-size: 20px;
+    font-family: 'NeueMachina', sans-serif;
+    position: absolute;
+    margin-top: -110px;
+    word-spacing: 1px;
+}
+
+.circles2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 70px;
+    display: grid;
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: 60px;
+   
+}
+
+.circles {
+    background-color: #d9ff6b;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* About grid + Social grid Einde */
+
+
+/* Podcast */
+
+.section-e .container {
+    position: absolute;
+    left: 4%;
+}
+
+.Levenswerk {
+    font-size: 60px;
+    font-family: 'NeueMachina', sans-serif;
+    position: absolute;
+    left: 120%;
+    width: 500px;
+    margin-top: -10px;
+}
+
+.podcast {
+    position: absolute;
+    color: #a8aaab;
+    font-family: 'NeueMachina', sans-serif;
+    left: 120%;
+    margin-top: 100px;
+}
+
+.square {
+    height: 175px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecd6e8;
+}
+
+.circle {
+    display: flex;
+    z-index: 99;
+    background: #252526;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle {
+    width: 0;
+    margin-left: 10px;
+    height: 0;
+    border-style: solid;
+    border-width: 16.5px 0 16.5px 30px;
+    border-color: transparent transparent transparent #ecd6e8;
+}
+
+/* Podcast einde */
+
+
+/* Animaties */
+
+.animation-con {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.animation {
+    height: 120px;
+    width: 120px;
+}
+
+.animation img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+} 
+
+#fixed {
+    position: relative;
+    width: calc(100% - 20%);
+    height: calc(100% - 20%);
+    display: grid;
+    place-items: center;
+}
+
+#fixed2 {
+    width: calc(90% - 10%);
+    height: calc(90% - 10%);
+    display: grid;
+    place-items: center;
+}
+
+.human-img {
+    object-fit: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.verrassing-img {
+    object-fit: none;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.hero-img {
+    object-fit: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.HOT-img {
+    object-fit: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.mail-img {
+    display: grid;
+    place-items: center;
+    object-fit: none;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.human {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: 10%;
+}
+  
+.hero {
+    height: 100px;
+    width: 100px;
+    margin-left: 10%;
+    position: relative;
+}
+
+.HOT {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: 10%;
+}
+
+.verrassing {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    margin-left: 10%;
+}
+
+.mail {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    margin-left: 10%;
+}
+  
+#fix {
+    position: relative;
+    width: calc(100% - 20%);
+    height: calc(100% - 20%);
+    display: grid;
+    place-items: center;
+}
+  
+
+
+/* Animaties einde */
+
+
+/* Audio control */
+
+#audio-control {
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 302%;
+    left: 0;
+    padding: 10px 60px;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Audio control einde */
+
+
+/* animatie kruisje */
+.blok {
+    height: 50px;
+    position: absolute;
+    width: 60px;
+    right: 90px;
+    background-color: #ecd6e8ba;
+    top: 30px;
+    border-radius: 5px;
+}
+
+#fixt {
+  position: relative;
+  width: calc(100% - 20%);
+  height: calc(100% - 20%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.pict {
+  object-fit: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/* einde kruisje /*
+
+
+/* Footer */
+
+.footer-logo {
+    width: 175px;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.footer-text {
+    padding: 40px;
+    color: black;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+.footer-text2 {
+    margin-left: 380px;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+    font-weight: bolder;
+    margin-top: -240px;
+    line-height: 40px;    
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    font-size: 9.3vw;
+    position: absolute;
+    bottom: -364%;
+    left: 0;
+    right: 0;
+    font-family: 'NeueMachina', sans-serif;
+    color: #ecd6e8;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+/* Footer einde */
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    .col {}
+    [class*='grid_'] {
+        width: 100%;
+    }
+
+    .footer-title {
+        bottom: -550%;
+    }
+    
+
+    .podcast, .Levenswerk {
+        display: none;
+    }
+
+    .section-e .container { 
+        display: flex;
+        justify-content: center;
+        right: 0;   
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .col {}
+    [class*='grid_'] {
+        width: 100%;
+    }
+
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        text-align: center;
+        /* margin-top: 200px; */
+        font-family: 'NeueMachina', sans-serif;
+        color: #ecd6e8;
+        letter-spacing: 2px;
+        word-spacing: 10px;
+    }
+}
+
+
+
+/* Media queries einde */
+
+
+
+
+
+
+/* input#un-mute {
+    display: none;
+}
+
+.unmute img {
+    width: 5px;
+    height: 1px;
+    display: none;
+}
+
+input#un-mute:checked~.unmute img {
+    display: initial;
+}
+
+input#un-mute:checked~.mute img {
+    width: 5px;
+    height: 1px;
+    display: none;
+} */
