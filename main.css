@@ -113,11 +113,11 @@ html, body {
     filter: grayscale(0);
   }
   
-  .filmpjes .box video {
+  .filmpjes .box .clip {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
   }
 
   #overlay{
@@ -211,7 +211,7 @@ html, body {
     width: 100%;
     height: 110vh;
     overflow: hidden;
-}
+}  
 
 .fullscreen-video-wrap video {
     min-width: 100%;
@@ -272,7 +272,7 @@ html, body {
 .section-d {
     color: #fff;
     overflow: hidden;
-    height: 52vw;
+    height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
@@ -422,7 +422,44 @@ p{
 
 /* Animaties */
 
-.animation-con {
+.animatie-filmpje {
+
+    z-index: 99;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 165px);
+    margin-top: 60px;
+    
+}
+
+.animatie-slider {
+    z-index: 99;
+    margin-left: -30px;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+ 
+    margin-top: -700px;
+}
+
+.animatie-rechts {
+
+    z-index: 99;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+ 
+    margin-top: -200px;
+    
+}
+
+/* .animation-con {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -437,7 +474,7 @@ p{
     height: 100%;
     width: 100%;
     object-fit: fill;
-} 
+}  */
 
 #fixed {
     position: relative;
@@ -476,6 +513,31 @@ p{
     transition: opacity 0.1s ease-in-out;
 }
 
+.SLIDER-img {
+    object-fit: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.rechts-img {
+    object-fit: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.Muteknop-img {
+    object-fit: none;
+    display: grid;
+    z-index: 99;
+    place-items: center;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
 .HOT-img {
     object-fit: none;
     display: grid;
@@ -493,16 +555,36 @@ p{
 }
 
 .human {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     position: relative;
-    margin-left: 25%;
+    /* margin-left: 25%; */
 }
   
 .hero {
-    height: 100px;
-    width: 100px;
-    margin-left: 25%;
+    height: 200px;
+    width: 200px;
+    /* margin-left: 25%; */
+    position: relative;
+}
+
+.SLIDER {
+    height: 200px;
+    width: 200px;
+    /* margin-left: 25%; */
+    position: relative;
+}
+
+.rechts {
+    height: 200px;
+    width: 200px;
+    /* margin-left: 25%; */
+    position: relative;
+}
+
+.MUTEKNOP {
+    height: 500px;
+    width: 500px;
     position: relative;
 }
 
@@ -514,17 +596,17 @@ p{
 }
 
 .verrassing {
-    height: 100px;
+    height: 200px;
     position: relative;
-    width: 100px;
-    margin-left: 25%;
+    width: 200px;
+    /* margin-left: 25%; */
 }
 
 .mail {
-    height: 100px;
+    height: 200px;
     position: relative;
-    width: 100px;
-    margin-left: 25%;
+    width: 200px;
+    /* margin-left: 25%; */
 }
   
 #fix {

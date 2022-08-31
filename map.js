@@ -40,6 +40,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("37").style.opacity = 0;
     document.getElementById("38").style.opacity = 0;
     document.getElementById("39").style.opacity = 0;
+
+    document.getElementById("40").style.opacity = 1;
+    document.getElementById("41").style.opacity = 0;
+    document.getElementById("42").style.opacity = 0;
+    document.getElementById("43").style.opacity = 0;
+    document.getElementById("44").style.opacity = 0;
+
+    document.getElementById("50").style.opacity = 1;
+    document.getElementById("51").style.opacity = 0;
+    document.getElementById("52").style.opacity = 0;
+    document.getElementById("53").style.opacity = 0;
+    document.getElementById("54").style.opacity = 0;
+
+    document.getElementById("60").style.opacity = 1;
+    document.getElementById("61").style.opacity = 0;
+    document.getElementById("62").style.opacity = 0;
+    document.getElementById("63").style.opacity = 0;
+    document.getElementById("64").style.opacity = 0;
 });
 
 function showPicture(index) {
@@ -96,5 +114,33 @@ function show4(index) {
     document.getElementById("37").style.opacity = 0;
     document.getElementById("38").style.opacity = 0;
     document.getElementById("39").style.opacity = 0;
+    document.getElementById(index).style.opacity = 1;
+}
+
+function show5(index) {
+    document.getElementById("40").style.opacity = 0;
+    document.getElementById("41").style.opacity = 0;
+    document.getElementById("42").style.opacity = 0;
+    document.getElementById("43").style.opacity = 0;
+    document.getElementById("44").style.opacity = 0;
+    document.getElementById(index).style.opacity = 1;
+}
+
+
+function show6(index) {
+    document.getElementById("50").style.opacity = 0;
+    document.getElementById("51").style.opacity = 0;
+    document.getElementById("52").style.opacity = 0;
+    document.getElementById("53").style.opacity = 0;
+    document.getElementById("54").style.opacity = 0;
+    document.getElementById(index).style.opacity = 1;
+}
+
+function show7(index) {
+    document.getElementById("60").style.opacity = 0;
+    document.getElementById("61").style.opacity = 0;
+    document.getElementById("62").style.opacity = 0;
+    document.getElementById("63").style.opacity = 0;
+    document.getElementById("64").style.opacity = 0;
     document.getElementById(index).style.opacity = 1;
 }
