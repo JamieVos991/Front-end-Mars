@@ -422,6 +422,12 @@ p{
 
 /* Animaties */
 
+.hot-center {
+    display: flex;
+    justify-content: center;
+   
+}
+
 .animatie-filmpje {
 
     z-index: 99;
@@ -484,12 +490,6 @@ p{
     place-items: center;
 }
 
-#fixed2 {
-    width: calc(90% - 10%);
-    height: calc(90% - 10%);
-    display: grid;
-    place-items: center;
-}
 
 .human-img {
     object-fit: none;
@@ -589,10 +589,9 @@ p{
 }
 
 .HOT {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     position: relative;
-    margin-left: 10%;
 }
 
 .verrassing {
@@ -616,7 +615,11 @@ p{
     display: grid;
     place-items: center;
 }
-  
+ 
+.mute {
+    background-color: transparent;
+    border: none;
+} 
 
 
 /* Animaties einde */

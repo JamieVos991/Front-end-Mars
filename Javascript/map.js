@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("36").style.opacity = 0;
     document.getElementById("37").style.opacity = 0;
     document.getElementById("38").style.opacity = 0;
-    document.getElementById("39").style.opacity = 0;
 
     document.getElementById("40").style.opacity = 1;
     document.getElementById("41").style.opacity = 0;
@@ -113,7 +112,6 @@ function show4(index) {
     document.getElementById("36").style.opacity = 0;
     document.getElementById("37").style.opacity = 0;
     document.getElementById("38").style.opacity = 0;
-    document.getElementById("39").style.opacity = 0;
     document.getElementById(index).style.opacity = 1;
 }
 
