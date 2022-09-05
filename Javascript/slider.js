@@ -1,19 +1,25 @@
-const buttons = document.querySelectorAll("[data-carousel-button]")
+var indexValue = 1;
+showVid(indexValue);
 
-buttons.forEach(button => {
-    button.addEventListener("click", () =>{
-     
-        const offset = button.dataset.carouselButton === "next" ? 1 : -1
-        const slides = button
-        .closest("[data-carousel]")
-        .querySelector("[data-slides]")
+function side_slide(e){
+    showVid(indexValue += e);
+}
 
-        const activeSlide = slides.querySelector("[data-active]")
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if(newIndex <0)newIndex = slides.children.length -1
-        if (newIndex >= slides.children.length) newIndex = 0
+function showVid(e) {
+    var i;
+    const vid = document.querySelectorAll('.video');
 
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
-    })
-})
+    if(e >vid.length) {
+        indexValue = 1
+    }
+
+    if(e < 1) {
+        indexValue = vid.length
+    }
+
+    for(i = 0; i < vid.length; i++) {
+        vid[i].style.display = "none";
+    }
+
+    vid[indexValue-1].style.display = "block";
+}

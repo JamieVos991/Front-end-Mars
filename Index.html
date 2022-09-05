@@ -351,16 +351,19 @@
         <header class="header container">
             <div class="fullscreen-video-wrap">
 
+                <div class="content">
+                    <div class="images">
+                        <video class="video" muted="true" autoplay="true" type="video/mp4" loop="true" src="Foto's/hoofdvideo.mp4" alt="hoofdvideo #1"></video>
+                        <video class="video" muted="true" autoplay="true" type="video/mp4" loop="true" src="Foto's/Aflevering Klimaat.mp4" alt="hoofdvideo #1"></video>
+                        <video class="video" muted="true" autoplay="true" type="video/mp4" loop="true" src="Foto's/Aflevering Onderwijs.mp4 alt="hoofdvideo #1""></video>
+                        <video class="video" muted="true" autoplay="true" type="video/mp4" loop="true" src="Foto's/Aflevering Zorg.mp4" alt="hoofdvideo #1"></video>
+                    </div>
+                </div>
 
-                <video class="video" muted="true" autoplay="true" type="video/mp4" loop="true"
-                    src="Foto's/hoofdvideo.mp4" alt="hoofdvideo #1">
-
-
-                </video>
 
                 <div class="animatie-slider">
 
-                    <div class="SLIDER" style="display: grid; place-items: center;" onmouseenter="show6(50)"
+                    <div onclick="side_slide(-1)" class="SLIDER" style="display: grid; place-items: center;" onmouseenter="show6(50)"
                         onmouseleave="show6(50)">
                         <img class="SLIDER-img" src="Foto's/Middel 48.png" id="50" />
                         <img class="SLIDER-img" src="Foto's/Middel 49.png" id="51" />
@@ -381,7 +384,7 @@
 
                 <div class="animatie-rechts">
 
-                    <div class="rechts" style="display: grid; place-items: center;" onmouseenter="show7(60)"
+                    <div onclick="side_slide(1)" class="rechts" style="display: grid; place-items: center;" onmouseenter="show7(60)"
                         onmouseleave="show7(60)">
                         <img class="rechts-img" src="Foto's/Middel 53.png" id="60" />
                         <img class="rechts-img" src="Foto's/Middel 54.png" id="61" />
